@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Prospects</title>
+</head>
+<body>
+    <h1>Prospects</h1>
+    <p>Process Stage:</p>
+    <form>
+        <div class="multiselect">
+          <div class="selectBox" onclick="showCheckboxes()">
+            <select>
+              <option>All</option>
+            </select>
+            <div class="overSelect"></div>
+          </div>
+          <div id="checkboxes">
+            <label for="one">
+              <input type="checkbox" id="one" />Market Identification.</label>
+            <label for="two">
+              <input type="checkbox" id="two" />Long term positioning.</label>
+            <label for="three">
+              <input type="checkbox" id="three" />Opportunity Assessment (Identification and Qualification).</label>
+            <label for="four">
+                <input type="checkbox" id="four" />Opportunity/Capture Planning.</label>
+            <label for="five">
+                <input type="checkbox" id="five" />Proposal Planning.</label>
+            <label for="six">
+                <input type="checkbox" id="six" />Proposal Development.</label>
+            <label for="seven">
+                <input type="checkbox" id="seven" />Negotiation and Post-Submittal Activity.</label>
+            <label for="eight">
+                <input type="checkbox" id="eight" />Delivery and Ongoing Customer Relationships.</label>
+          </div>
+        </div>
+      </form>
+      <button id="ClickButton" type="button">Search</button> 
+      <button id= "NewProspect" type="button">Add New Prospects</button>
+      
+      <!------my content-->
+<table>
+  <thead>
+      <tr>
+          <th scope="col">RAG</th>
+          <th scope="col">Rank</th>
+          <th scope="col">Organisation</th>
+          <th scope="col">Stakeholder</th>
+          <th scope="col">Programme Name</th>
+          <th scope="col">Process Stage</th>
+          <th scope="col">Project Value</th>
+          <th scope="col">Proposal Success</th>
+          <th scope="col">Procurement Registered Date</th>
+          <th scope="col">Mailing list</th>
+          <th scope="col">Link</th>
+          <th scope="col">Comments</th>
+          <th scope="col">Tender Requirements</th>
+          <th scope="col">Outstanding Actions</th>
+          <th scope="col"></th>
+      </tr>
+
+  </thead>
+  <tbody>
+      <tr>
+          <td data-label="RAG">Amber</td>
+          <td data-label="Rank">1</td>
+          <td data-label="Organisation">Discovery</td>
+          <td data-label="Stakeholder">BSG</td>
+          <td data-label="Programme Name">BSG Project</td>
+          <td data-label="Process Stage">Proposal Development</td>
+          <td data-label="Project Value">345555,00</td>
+          <td data-label="Project Success">Submitted</td>
+          <td data-label="Procurement Registered Date">2021/06/15</td>
+          <td data-label="Mailing list"><input type="checkbox" id="Mailing"/></td>
+          <td data-label="Link"><a href="https://www.google.com/search?" target="_blank">www.google.com</td></a>
+          <td data-label="Comments">Testing Comment</td>
+          <td data-label="Tender Requirements">Tender document required</td>
+          <td data-label="Outstanding Actions">Compile tender document</td>
+          <td data-label=""><a href="Edit" target="_blank">Edit||</a><a href="Details" target="_blank">Details||</a><a href="Delete" target="_blank">Delete</a></td>
+
+
+      </tr>
+
+      <tr>
+          <td scope="row" data-label="RAG">Red</td>
+          <td data-label="Rank">1</td>
+          <td data-label="Organisation">BSG</td>
+          <td data-label="Stakeholder">Samsung</td>
+          <td data-label="Programme Name">Samsung Project1</td>
+          <td data-label="Process Stage">Opportunity Assessment</td>
+          <td data-label="Project Value">345376,00</td>
+          <td data-label="Project Success">Awarded</td>
+          <td data-label="Procurement Registered Date">2021/06/14</td>
+          <td data-label="Mailing list"><input type="checkbox" id="Mailing"/></td>
+          <td data-label="Link"><a href="https://www.google.com/search?" target="_blank">www.google.com</td></a>
+          <td data-label="Comments">Testing Comment</td>
+          <td data-label="Tender Requirements">Tender document required</td>
+          <td data-label="Outstanding Actions">Compile tender document</td>
+          <td data-label=""><a href="Edit" target="_blank">Edit||</a><a href="Details" target="_blank">Details||</a><a href="Delete" target="_blank">Delete</a></td>
+      </tr>
+      <tr>
+          <td scope="row" data-label="RAG">Amber</td>
+          <td data-label="Rank">4</td>
+          <td data-label="Organisation">StandardBank</td>
+          <td data-label="Stakeholder">Soraya</td>
+          <td data-label="Programme Name">StandardGirls</td>
+          <td data-label="Process Stage">Opportunity Assessment</td>
+          <td data-label="PProject Value">12000,00</td>
+          <td data-label="Project Success">Submitted</td>
+          <td data-label="Procurement Registered Date">2021/06/15</td>
+          <td data-label="Mailing list"><input type="checkbox" id="Mailing"/></td>
+          <td data-label="Link"></td>
+          <td data-label="Comments">Wonderful project</td>
+          <td data-label="Tender Requirements"></td>
+          <td data-label="Outstanding Actions"></td>
+          <td data-label=""><a href="Edit" target="_blank">Edit||</a><a href="Details" target="_blank">Details||</a><a href="Delete" target="_blank">Delete</a></td>
+      </tr>
+
+      <tr>
+        <td scope="row" data-label="RAG">Red</td>
+        <td data-label="Rank">4</td>
+        <td data-label="Organisation">StandardBank</td>
+        <td data-label="Stakeholder">Soraya</td>
+        <td data-label="Programme Name">FNB</td>
+        <td data-label="Process Stage">Market Identification</td>
+        <td data-label="PProject Value">12000,00</td>
+        <td data-label="Project Success">Submitted</td>
+        <td data-label="Procurement Registered Date">2021/06/18</td>
+        <td data-label="Mailing list"><input type="checkbox" id="Mailing"/></td>
+        <td data-label="Link"></td>
+        <td data-label="Comments"></td>
+        <td data-label="Tender Requirements"></td>
+        <td data-label="Outstanding Actions"></td>
+        <td data-label=""><a href="Edit" target="_blank">Edit||</a><a href="Details" target="_blank">Details||</a><a href="Delete" target="_blank">Delete</a></td>
+    </tr>
+
+    <tr>
+      <td scope="row" data-label="RAG">Green</td>
+      <td data-label="Rank">1</td>
+      <td data-label="Organisation">FNB</td>
+      <td data-label="Stakeholder">Cynthia Augustine</td>
+      <td data-label="Programme Name">Skills Development</td>
+      <td data-label="Process Stage">Market Identification</td>
+      <td data-label="PProject Value">20000,00</td>
+      <td data-label="Project Success">Outstanding</td>
+      <td data-label="Procurement Registered Date">2021/06/24</td>
+      <td data-label="Mailing list"><input type="checkbox" id="Mailing"/></td>
+      <td data-label="Link"></td>
+      <td data-label="Comments"></td>
+      <td data-label="Tender Requirements"></td>
+      <td data-label="Outstanding Actions"></td>
+      <td data-label=""><a href="Edit" target="_blank">Edit||</a><a href="Details" target="_blank">Details||</a><a href="Delete" target="_blank">Delete</a></td>
+  </tr>
+
+  </tbody>
+</table>
+<script>
+  var expanded = false;
+
+function showCheckboxes() {
+var checkboxes = document.getElementById("checkboxes");
+if (!expanded) {
+  checkboxes.style.display = "block";
+  expanded = true;
+} else {
+  checkboxes.style.display = "none";
+  expanded = false;
+}
+}
+</script>
+</body>
+</html>

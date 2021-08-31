@@ -1,0 +1,178 @@
+/*====headingstyling=====*/
+
+h1{
+    margin-top: 35px;
+}
+
+p{
+    margin-top: -15px;
+}
+
+body{
+    background-color:lightgrey;
+}
+
+/*===dropdownbox===*/
+
+.multiselect {
+    width: 300px;
+}
+
+.selectBox select {
+    width: 100%;
+    font-weight: bold;
+}
+
+.overSelect {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.selectBox{
+    cursor: pointer;
+    position: relative;
+}
+
+#checkboxes {
+    display: none;
+    border: 1px #dadada solid;
+}
+
+#checkboxes label {
+    display: block;
+}
+
+#checkboxes label:hover {
+    background-color: #1e90ff;
+    cursor: pointer;
+}
+
+#ClickButton{
+    background-color:darkcyan;
+    border: #000 solid 1px;
+    width: 70px;
+    height: 30px;
+    transition: .60s;
+    margin-top: 1px;
+}
+
+#ClickButton:hover{
+    background-color:darkseagreen;
+    border: #eee solid 2px;
+    cursor: pointer;
+}
+
+#NewProspect{
+    background-color:cornflowerblue;
+    border: #000 solid 1px;
+    height: 30px;
+    transition: .30s;
+}
+
+#NewProspect:hover{
+    cursor: pointer;
+    border: #dadada solid 2px;
+}
+
+/*====table===*/
+
+label {
+    display: block;
+    font: 1rem 'Kaisei Opti', serif;
+}
+
+input,
+label {
+    margin: .4rem 0;
+}
+
+.reset {
+    margin: .4rem 0;
+    color: rgb(32, 64, 243);
+}
+
+table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 120%;
+    table-layout: fixed;
+    /*margin-left: 55px;*/
+    margin-top: 20px;
+}
+
+
+
+table tr {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: 0.33em;
+    font-size: small;
+}
+
+table th,
+table td {
+    padding: 0.625em;
+    text-align: center;
+}
+
+table th {
+    font-size: 0.75em;
+    letter-spacing: 0.0em;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+    table {
+        border: 3;
+    }
+
+    table caption {
+        font-size: 1.3em;
+    }
+
+    table thead {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 3px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+        font-family: 'Kaisei Opti', serif;
+        line-height: 1.25;
+    }
+
+    table tr {
+        border-bottom: 3px solid #ddd;
+        display: block;
+        margin-bottom: 0.625em;
+    }
+
+    table td {
+        border-bottom: 1px solid #ddd;
+        display: block;
+        font-size: 0.8em;
+        text-align: right;
+    }
+
+    table td::before {
+        /*
+  * aria-label has no advantage, it won't be read inside a table
+  content: attr(aria-label);
+  */
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    table td:last-child {
+        border-bottom: 0;
+    }
+}
